@@ -7,7 +7,6 @@ CShamburgerMenu.addEventListener("click", function () {
   CShamburgerMenu.classList.toggle("cs-active");
   CSnavbarMenu.classList.toggle("cs-active");
   CSbody.classList.toggle("cs-open");
-  // run the function to check the aria-expanded value
   ariaExpanded();
   document.querySelector("body").classList.add("scroll");
 });
@@ -30,6 +29,7 @@ function ariaExpanded() {
 
 document.addEventListener("scroll", (e) => {
   const scroll = document.documentElement.scrollTop;
+
   if (scroll >= 100) {
     document.querySelector("body").classList.add("scroll");
   } else {
@@ -54,7 +54,13 @@ document.addEventListener("click", (e) => {
 
   navItems.forEach(function (item) {
     item.addEventListener("click", function () {
+      console.log("event has been triggered");
+
+      CShamburgerMenu.classList.toggle("cs-active");
+      CSnavbarMenu.classList.toggle("cs-active");
+      CSbody.classList.toggle("cs-open");
       ariaExpanded();
+      document.querySelector("body").classList.add("scroll");
     });
   });
 });
