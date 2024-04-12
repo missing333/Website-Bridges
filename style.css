@@ -1451,7 +1451,7 @@
         z-index: 1;
         /* prevents padding from adding to the width */
         box-sizing: border-box;        
-        box-shadow: 5px 2px 5px #9c9c9c;
+        box-shadow: 5px 2px 5px rgb(0 0 0 / 0.2);
     }
     #pricing-357 .cs-button-solid:before {
         content: "";
