@@ -837,7 +837,7 @@
 /* Desktop - 1300px (To make image background parallax) */
 @media only screen and (min-width: 81.25rem) {
     #hero-143 {
-        background: url("https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen.jpg");
+        background: url("art/bridge1.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1073,7 +1073,7 @@
         border-radius: 5rem 0 5rem 0;
     }
     #stats-888 .cs-item:nth-of-type(3) {
-        background-color: #fbcebd;
+        background-color: var(--secondary);
         border-radius: 5rem 0 5rem 0;
     }
     #stats-888 .cs-item:nth-of-type(4) {
@@ -1294,7 +1294,7 @@
         transition-delay: 0.2s;
     }
     #pricing-357 .cs-popular {
-        background: var(--primaryDark);
+        background: var(--primary);
         position: relative;
         /* clips the popular tag */
         overflow: hidden;
@@ -1311,7 +1311,7 @@
         width: 10.625rem;
         padding: 0 0.75rem;
         color: #000;
-        background-color: var(--primaryLight);
+        background-color: var(--secondary);
         position: absolute;
         display: block;
         top: 1.25rem;
@@ -1327,8 +1327,8 @@
         color: var(--bodyTextColorWhite);
     }
     #pricing-357 .cs-popular .cs-button-solid {
-        background-color: var(--primaryLight);
-        color: var(--headerColor);
+        background-color: var(--bodyTextColorWhite);
+        color: #000;
         transition: color 0.3s;
         box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
     }
@@ -1380,7 +1380,6 @@
     }
     #pricing-357 .cs-price {
         font-size: 3.0625rem;
-        line-height: 1.2em;
         font-weight: 700;
         margin-bottom: 1.5rem;
         color: var(--headerColor);
