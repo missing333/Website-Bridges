@@ -2,6 +2,9 @@
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
 /* Mobile - 1023px */
+
+
+
 @media only screen and (max-width: 63.9375rem) {
     body.cs-open {
       overflow: hidden;
@@ -37,7 +40,7 @@
       /* background color */
       content: "";
       width: 100%;
-      height: 100%;
+      height: 90%;
       background: #fff;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       opacity: 1;
@@ -70,6 +73,7 @@
       justify-content: flex-end;
       align-items: center;
       gap: 1.5rem;
+      max-height: 4rem;
     }
     #cs-navigation .cs-logo {
       width: auto;
@@ -968,7 +972,7 @@
 @media only screen and (min-width: 0rem) {
     #stats-888 {
         padding: var(--sectionPadding);
-        background-color: var(--secondary);
+        background-color: var(--primaryLight);
     }
     #stats-888 .cs-container {
         width: 100%;
@@ -1175,13 +1179,14 @@
         align-items: flex-start;
         flex-direction: column;
         position: relative;
-        background-color: var(--secondary);
+        background-color: var(--primaryLight);
     }
     #reviews-355 .cs-quote {
         width: 2.5rem;
         height: auto;
         margin-bottom: 2rem;
         display: block;
+        fill: var(--primaryDark);
     }
     #reviews-355 .cs-review {
         /* 14px - 20px */
@@ -1289,7 +1294,7 @@
         transition-delay: 0.2s;
     }
     #pricing-357 .cs-popular {
-        background: var(--primary);
+        background: var(--primaryDark);
         position: relative;
         /* clips the popular tag */
         overflow: hidden;
@@ -1323,9 +1328,9 @@
     }
     #pricing-357 .cs-popular .cs-button-solid {
         background-color: var(--primaryLight);
-        color: var(--primary);
+        color: var(--headerColor);
         transition: color 0.3s;
-        box-shadow: 5px 5px 10px #2846aa;
+        box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
     }
     #pricing-357 .cs-popular .cs-button-solid:before {
         background-color: var(--headerColor);
