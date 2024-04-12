@@ -48,7 +48,7 @@ for (const item of dropDowns) {
   item.addEventListener("click", onClick);
 }
 
-// li nav toggle code
+//nav auto-close code
 document.addEventListener("click", (e) => {
   var navItems = document.querySelectorAll("#cs-navigation .cs-li");
 

@@ -12,7 +12,7 @@
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
-    --bodyFontSize: 1rem;
+    --bodyFontSize: 1.1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
@@ -38,13 +38,13 @@ html {
 
 @font-face {
     font-family: TitleFont;
-    src: url(font/Cinzel-Regular.ttf);
+    src: url(font/Uberlin.ttf);
 }
     
 
 @font-face {
     font-family: bodyFont;
-    src: url(font/GlacialIndifference-Regular.otf);
+    src: url(font/BacasimeAntique-Regular.ttf);
 }
     
 
@@ -64,6 +64,7 @@ html {
 
 .cs-title {
     font-family: TitleFont;
+    letter-spacing: 10px;
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
