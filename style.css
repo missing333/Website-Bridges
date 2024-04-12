@@ -3,7 +3,45 @@
 <--- -------------------------- -*/
 /* Mobile - 1023px */
 
-
+#cs-navigation .cs-button-solid {
+  font-size: 1rem;
+  font-weight: 700;
+  /* 46px - 56px */
+  line-height: clamp(2.875em, 5.5vw, 3.5em);
+  text-align: center;
+  text-decoration: none;
+  min-width: 9.375rem;
+  margin: 0;
+  /* prevents padding from adding to the width */
+  box-sizing: border-box;
+  padding: 0 2rem;
+  color: #fff;
+  background-color: var(--primary);
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s;
+  border-radius: 5px;
+}
+#cs-navigation .cs-button-solid:before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: #000;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 0.3s;
+  border-radius: 5px;
+}
+#cs-navigation .cs-button-solid:hover {
+  color: #FFF;
+}
+#cs-navigation .cs-button-solid:hover:before {
+  width: 100%;
+}
 
 @media only screen and (max-width: 63.9375rem) {
     body.cs-open {
@@ -113,7 +151,7 @@
       order: 3;
     }
     #cs-navigation .cs-contact-group {
-      display: none;
+      /* display: none; */
       position: relative;
       z-index: 10;
     }
@@ -283,6 +321,9 @@
     #cs-navigation .cs-button-solid {
       display: none;
     }
+
+    
+
   }
   /* Tablet - 768px */
   @media only screen and (min-width: 48rem) {
@@ -621,43 +662,6 @@
     }
     #cs-navigation .cs-li-link.cs-active {
       color: var(--primary);
-    }
-    #cs-navigation .cs-button-solid {
-      font-size: 1rem;
-      font-weight: 700;
-      /* 46px - 56px */
-      line-height: clamp(2.875em, 5.5vw, 3.5em);
-      text-align: center;
-      text-decoration: none;
-      min-width: 9.375rem;
-      margin: 0;
-      /* prevents padding from adding to the width */
-      box-sizing: border-box;
-      padding: 0 2rem;
-      color: #fff;
-      background-color: var(--primary);
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-      transition: color 0.3s;
-    }
-    #cs-navigation .cs-button-solid:before {
-      content: "";
-      width: 0%;
-      height: 100%;
-      background: #fff;
-      opacity: 1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: width 0.3s;
-    }
-    #cs-navigation .cs-button-solid:hover {
-      color: #1a1a1a;
-    }
-    #cs-navigation .cs-button-solid:hover:before {
-      width: 100%;
     }
   }
   /* Large Desktop - 1300px */
