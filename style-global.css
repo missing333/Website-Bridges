@@ -1,9 +1,9 @@
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #f183cd;
-    --primaryLight: #f7b6e1;
-    --primaryDark: #f75ac2;
-    --secondary: #c0e5fc;
+    --primary: #BACEC1;
+    --primaryLight: #BACEC1;
+    --primaryDark: #1D3124;
+    --secondary: #E59560;
     --secondaryLight: #ffba43;
     --headerColor: #1a1a1a;
     --bodyTextColor: #363636;
@@ -11,7 +11,7 @@
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --headerFontSize: clamp(3.9375rem, 5.9vw, 5.0625rem);
     --bodyFontSize: 1.1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
@@ -42,6 +42,7 @@ html {
 @font-face {
     font-family: TitleFont;
     src: url(font/Uberlin.ttf);
+    /* title css is in Hero Section, .cs-title */
 }
     
 

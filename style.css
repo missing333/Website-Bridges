@@ -683,7 +683,7 @@
         /* Centers button */
         text-align: center;
         /* 144px - 300px - leaving extra space for the navigation */
-        padding: clamp(9rem, 25.95vw, 18.75rem) 1rem 0;
+        padding: clamp(9rem, 19.95vw, 18.75rem) 1rem 0;
         /* 130px - 450px */
         padding-bottom: clamp(12.125rem, 30.95vw, 28.125rem);
         position: relative;
@@ -764,13 +764,14 @@
     #hero-143 .cs-title {
         /* 39px - 61px */
         font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-        font-weight: 700;
+        font-weight: 800;
         line-height: 1.2em;
         text-align: center;
         max-width: 51.8125rem;
         /* 16px - 24px */
         margin: 0 auto clamp(1rem, 4vw, 1.5rem);
-        color: #fff;
+        /* color: var(--secondary); */
+        color: #FFF;
         position: relative;
     }
     #hero-143 .cs-title:after {
@@ -807,7 +808,7 @@
         text-decoration: none;
         font-weight: 700;
         margin: auto;
-        color: #efefef;
+        color: var(--primaryDark);
         min-width: 9.375rem;
         padding: 0 1.5rem;
         background-color: var(--primary);
