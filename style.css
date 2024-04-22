@@ -15,8 +15,8 @@
   /* prevents padding from adding to the width */
   box-sizing: border-box;
   padding: 0 2rem;
-  color: #fff;
-  background-color: var(--primary);
+  color: var(--bodyTextColorWhite);
+  background-color: var(--secondary);
   display: inline-block;
   position: relative;
   z-index: 1;
