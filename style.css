@@ -894,7 +894,6 @@
   }
   #services-285 .cs-picture {
       margin: 0;
-      margin-bottom: 1.5rem;
       /* 68px - 88px */
       width: clamp(4.25rem, 4vw, 5.5rem);
       height: clamp(4.25rem, 4vw, 5.5rem);
@@ -1235,7 +1234,7 @@
 @media only screen and (min-width: 0rem) {
     #stats-888 {
         padding: var(--sectionPadding);
-        background-color: var(--primaryLight);
+        /* background-color: var(--primaryLight); */
     }
     #stats-888 .cs-container {
         width: 100%;
@@ -1354,9 +1353,10 @@
     }
     #stats-888 .cs-desc {
         /* 16px -20px */
+        font-family: bodyFont;
         font-size: clamp(1rem, 2vw, 1.25rem);
         line-height: 1.2em;
-        font-weight: 700;
+        font-weight: 400;
         text-align: inherit;
         margin: 0;
         color: var(--bodyTextColor);
@@ -1650,7 +1650,6 @@
     }
     #reviews-355 .cs-review {
         /* 14px - 20px */
-        font-size: clamp(0.875rem, 2vw, 1.25rem);
         line-height: 1.5em;
         margin: 0;
         /* 20px - 40px */
@@ -1659,13 +1658,12 @@
     }
     #reviews-355 .cs-name {
         /* 20px - 25px */
-        font-size: clamp(1.25rem, 3vw, 1.5625rem);
+        font-size: clamp(1.25rem, 2rem, 2.5625rem);
         line-height: 1.2em;
-        font-weight: 700;
         margin: 0;
         /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
         margin-top: auto;
-        color: var(--headerColor);
+        color: var(--primaryDark);
         display: block;
     }
     #reviews-355 .cs-job {

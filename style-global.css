@@ -1,7 +1,7 @@
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     --primary: #FFAB9F;
-    --primaryLight: #ffd6d0;
+    --primaryLight: #ffece9;
     --primaryDark: #E27C42;
     --secondary: #8D9B6A;
     --secondaryLight: #ffba43;
@@ -72,7 +72,8 @@ html {
 }
 
 
-.cs-topper {
+.cs-topper, .cs-h3 {
+    font-family: Uberlin;
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -85,7 +86,7 @@ html {
     display: block;
 }
 
-.cs-title {
+.cs-title, .cs-name {
     font-family: TitleFont;
     letter-spacing: 0px;
     font-size: var(--headerFontSize);
@@ -98,7 +99,7 @@ html {
     position: relative;
 }
 
-.cs-text {
+.cs-text, .cs-item-text, .cs-review, .cs-info {
     line-height: 1.5em;
     text-align: inherit;
     width: 100%;
