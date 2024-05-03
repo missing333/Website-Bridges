@@ -131,7 +131,7 @@ a {
     text-align: center;
     text-decoration: none;
     min-width: 9.375rem;
-    margin: 0;
+    max-width: fit-content;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
     padding: 0 2rem;
