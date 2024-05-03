@@ -59,16 +59,6 @@ html {
 }
     
 
-a {
-    font-family: Uberlin;
-    line-height: 1.2em;
-    text-align: inherit;
-    margin: 0 0 0 0;
-    color: var(--headerColor);
-    position: relative;
-    text-
-
-}
 
 .cs-main {
     font-family: Uberlin;
@@ -118,3 +108,20 @@ a {
     font-family: bodyFont;
 }
                             
+
+
+
+
+a {
+    font-family: Uberlin;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0 0 0 0;
+    color: var(--headerColor);
+    position: relative;
+
+}
+
+.cs-button-solid {
+    letter-spacing: 3px;
+}
