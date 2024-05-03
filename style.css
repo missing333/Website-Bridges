@@ -16,7 +16,7 @@
   box-sizing: border-box;
   padding: 0 2rem;
   color: var(--bodyTextColorWhite);
-  background-color: var(--secondary);
+  background-color: var(--primary);
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -115,7 +115,6 @@
     }
     #cs-navigation .cs-logo {
       width: auto;
-      max-width: 12.5rem;
       height: 100%;
       margin: 0 auto 0 0;
       /* prevents padding from affecting height and width */
@@ -657,8 +656,25 @@
       position: relative;
       transition: color 0.3s;
     }
-    #cs-navigation .cs-li-link:hover {
+    /* #cs-navigation .cs-li-link:hover {
       color: var(--primary);
+    } */
+    #cs-navigation .cs-li-link:hover:before {
+      width: 100%;
+    }
+    #cs-navigation .cs-li-link:before {
+        /* on hover underline */
+        content: "";
+        width: 0%;
+        height: 3px;
+        background: currentColor;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        color: var(--primary);
+        transition: width 0.3s;
     }
     #cs-navigation .cs-li-link.cs-active {
       color: var(--primary);
@@ -729,6 +745,8 @@
   }
   #hero-82 .cs-title {
       /* 39px - 61px */
+      font-family: Uberlin;
+      letter-spacing: 12px;
       font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
       font-weight: 700;
       line-height: 1.2em;
@@ -1510,7 +1528,7 @@
     font-weight: 900;
     line-height: 1.1875em;
     color: var(--primary);
-    opacity: 0.2;
+    opacity: 0.5;
     display: block;
   }
   #steps-1893 .cs-h3 {
@@ -1792,8 +1810,7 @@
       padding: 0.5rem;
       gap: 0.25rem;
       border-radius: 50px;
-      border-width: 2px;
-      border-color: var(--primary);
+      border: solid 3px var(--primary);
       background-color: #fff;
       /* clips the corners of the pseudo element */
       overflow: hidden;

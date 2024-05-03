@@ -20,6 +20,7 @@
 
 svg.logo{
     fill: var(--primary);
+    margin-right: 10px;
   }
 
 body {
@@ -39,17 +40,36 @@ html {
 
 
 @font-face {
-    font-family: TitleFont;
+    font-family: Uberlin;
     src: url(font/Uberlin.ttf);
+    /* title css is in Hero Section, .cs-title */
+}
+
+
+@font-face {
+    font-family: TitleFont;
+    src: url(font/Licorice-Regular.ttf);
     /* title css is in Hero Section, .cs-title */
 }
     
 
 @font-face {
     font-family: bodyFont;
-    src: url(font/BacasimeAntique-Regular.ttf);
+    src: url(font/Montserrat-VariableFont_wght.ttf);
 }
     
+
+
+
+.cs-main {
+    font-family: Uberlin;
+    letter-spacing: 10px;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0 0 0 0;
+    color: var(--headerColor);
+    position: relative;
+}
 
 
 .cs-topper {
@@ -67,9 +87,9 @@ html {
 
 .cs-title {
     font-family: TitleFont;
-    letter-spacing: 10px;
+    letter-spacing: 0px;
     font-size: var(--headerFontSize);
-    font-weight: 900;
+    font-weight: 400;
     line-height: 1.2em;
     text-align: inherit;
     max-width: 43.75rem;
@@ -79,7 +99,6 @@ html {
 }
 
 .cs-text {
-    font-size: var(--bodyFontSize);
     line-height: 1.5em;
     text-align: inherit;
     width: 100%;
