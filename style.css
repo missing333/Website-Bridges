@@ -1327,7 +1327,7 @@
         position: relative;
     }
     #stats-888 .cs-item:nth-of-type(1) {
-        background-color: #fef7f4;
+        background-color: var(--primaryLight);
         border-radius: 0 5rem 0 5rem;
     }
     #stats-888 .cs-item:nth-of-type(2) {
