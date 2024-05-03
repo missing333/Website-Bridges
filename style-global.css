@@ -59,7 +59,16 @@ html {
 }
     
 
+a {
+    font-family: Uberlin;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0 0 0 0;
+    color: var(--headerColor);
+    position: relative;
+    text-
 
+}
 
 .cs-main {
     font-family: Uberlin;
@@ -72,7 +81,7 @@ html {
 }
 
 
-.cs-topper, .cs-h3 {
+.cs-topper, .cs-h3, .cs-li-link  {
     font-family: Uberlin;
     font-size: var(--topperFontSize);
     line-height: 1.2em;
@@ -99,7 +108,7 @@ html {
     position: relative;
 }
 
-.cs-text, .cs-item-text, .cs-review, .cs-info {
+.cs-text, .cs-item-text, .cs-review, .cs-info  {
     line-height: 1.5em;
     text-align: inherit;
     width: 100%;

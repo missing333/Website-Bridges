@@ -1,0 +1,45 @@
+body{    
+    background-color: #faf6f2;
+}
+
+#interior{
+    width: 80%;
+    max-width: 57.5rem;
+    margin: auto;
+    padding: 125px 0px;
+}
+
+#interior h1, h2{
+    font-family: Uberlin;
+    letter-spacing: 4px;
+}
+
+#interior h1{
+    font-size: 3em;
+}
+
+#interior h2{
+    font-size: 2em;
+}
+
+#interior p, li{
+    font-family: bodyFont;
+    max-width: 600px;
+    
+}
+
+#interior ul{
+    margin-left: 20px;
+}
+
+#interior blockquote{
+    background-color: var(--primaryLight);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#interior blockquote name{
+    font-family: TitleFont;
+    font-size: 3rem;
+    padding-left: 100px;
+}

@@ -48,19 +48,19 @@ for (const item of dropDowns) {
   item.addEventListener("click", onClick);
 }
 
-//nav auto-close code
-document.addEventListener("click", (e) => {
-  var navItems = document.querySelectorAll("#cs-navigation .cs-li");
+// //nav auto-close code
+// document.addEventListener("click", (e) => {
+//   var navItems = document.querySelectorAll("#cs-navigation .cs-li");
 
-  navItems.forEach(function (item) {
-    item.addEventListener("click", function () {
-      console.log("event has been triggered");
+//   navItems.forEach(function (item) {
+//     item.addEventListener("click", function () {
+//       console.log("event has been triggered");
 
-      CShamburgerMenu.classList.toggle("cs-active");
-      CSnavbarMenu.classList.toggle("cs-active");
-      CSbody.classList.toggle("cs-open");
-      ariaExpanded();
-      document.querySelector("body").classList.add("scroll");
-    });
-  });
-});
+//       CShamburgerMenu.classList.toggle("cs-active");
+//       CSnavbarMenu.classList.toggle("cs-active");
+//       CSbody.classList.toggle("cs-open");
+//       ariaExpanded();
+//       document.querySelector("body").classList.add("scroll");
+//     });
+//   });
+// });
