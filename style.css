@@ -112,6 +112,7 @@
       align-items: center;
       gap: 1.5rem;
       max-height: 4rem;
+      margin-top: -7px;
     }
     #cs-navigation .cs-logo {
       width: auto;
@@ -528,7 +529,7 @@
     #cs-navigation .cs-container {
       width: 100%;
       max-width: 90rem;
-      margin: auto;
+      /* margin: auto; */
       /* prevents padding from affecting height and width */
       box-sizing: border-box;
       padding: 0 1.5rem;
