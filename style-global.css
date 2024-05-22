@@ -24,6 +24,8 @@
 
 svg.logo{
     fill: var(--primary);
+    stroke: var(--primary);
+    stroke-width: 1.2;
     margin-right: 10px;
   }
 
