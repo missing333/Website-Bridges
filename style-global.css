@@ -1,6 +1,6 @@
 :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #FFAB9F;
+    --primary: #f7a69a;
     --primaryLight: #ffece9;
     --primaryDark: #E27C42;
     --secondary: #8D9B6A;
@@ -9,6 +9,7 @@
     --bodyTextColor: #363636;
     --bodyTextColorWhite: #fafbfc;
     /* 13px - 16px */
+    --logoFontSize: clamp(0.8125rem, 5vw, 2rem);
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
@@ -16,6 +17,9 @@
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
+
+
+
 
 
 svg.logo{
@@ -62,7 +66,8 @@ html {
 
 .cs-main {
     font-family: Uberlin;
-    letter-spacing: 10px;
+    font-size: var(--logoFontSize);
+    letter-spacing: 5px;
     line-height: 1.2em;
     text-align: inherit;
     margin: 0 0 0 0;
@@ -80,9 +85,12 @@ html {
     letter-spacing: .1em;
     font-weight: 700;
     color: var(--primaryDark);    
-    padding-top: 1.5rem;
     margin-bottom: 0.25rem;
     display: block;
+}
+
+.cs-topper, .cs-h3{
+    padding-top: 1.5rem;
 }
 
 .cs-title, .cs-name {
